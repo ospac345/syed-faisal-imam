@@ -1,0 +1,25 @@
+footer{
+    padding: 500px 0 0 0;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .footer_container{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    width: "100%";
+  }
+
+  .social_media{
+    margin: 20px 150px;
+  }
+
+  @media (min-width: 600px) {
+    .footer_container {
+      flex-direction: row; /* For larger screens */
+    }
+  }
