@@ -14,8 +14,6 @@
       -webkit-transform: rotate(45deg);
          transform: rotate(45deg);
          transform: rotate(45deg);
-    border-right: 2px solid #fff; 
-    border-bottom: 2px solid #fff;
     margin: 0 0 3px 5px;
   }
   #mouse-scroll .mouse {
@@ -25,7 +23,6 @@
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    border: 2px solid #ffffff;
     top: 170px;
   }
   #mouse-scroll .down-arrow-1 {

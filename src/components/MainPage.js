@@ -36,24 +36,24 @@ function MainPage() {
                 palette: {
                     mode,
                     primary: {
-                        main: mode === 'light' ? '#607D8B' : '#37474F',  // Blue Grey
+                        main: mode === 'light' ? '#364652' : '#89AB92',  // Blue Gray
                     },
                     secondary: {
-                        main: mode === 'light' ? '#FF5722' : '#F4511E',  // Deep Orange
+                        main: mode === 'light' ? '#716873' : '#B19F9F',
                     },
                     error: {
                         main: mode === 'light' ? '#FF1744' : '#FF1744',  // Red
                     },
                     background: {
-                        default: mode === 'light' ? '#E5E8EB' : '#333333',  // Gainsboro / Dark Gray
-                        paper: mode === 'light' ? '#ECEFF1' : '#333333',    // Gainsboro / Dark Gray
+                        default: mode === 'light' ? '#ECEFF1' : '#333333',  // Gainsboro / Dark Gray
+                        paper: mode === 'light' ? '#FAFDFF' : '#333333',    // Gainsboro / Dark Gray
                     },
                     particles: {
                         main: mode === 'light' ? '#009688' : '#00BCD4',  // Teal / Cyan
                     },
-                    divider: '#B09F95',
+                    divider: '#5F665C',
                     footer: {
-                        background: mode === 'light' ? '#f0f0f0' : '#333333', // Light gray in light mode, Dark gray in dark mode
+                        background: mode === 'light' ? '#D4D7D9' : '#665F5C', // Light gray in light mode, Dark gray in dark mode
                         text: mode === 'light' ? '#555555' : '#cccccc', // Dark gray text in light mode, Light gray text in dark mode
                     }
                 },
@@ -77,7 +77,7 @@ function MainPage() {
                             color: 'text.primary',
                         }}
                     >
-                        <Container className="main-page-container" maxWidth="xl">
+                        <Container className="main-page-container" maxWidth="xl" disableGutters='true'>
                             <NavBar />
                             <Body />
                             <AnimatedBackground />

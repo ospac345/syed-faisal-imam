@@ -15,7 +15,7 @@ import NavBarDrawerMenu from './NavBarDrawerMenu';
 
 function NavBar() {
 
-    const theme1 = useTheme();
+    const theme = useTheme();
     const colorMode = React.useContext(ColorModeContext);
 
     return (
@@ -24,11 +24,10 @@ function NavBar() {
             <AppBar component="nav" color='transparent' sx={{ boxShadow: '0 0 0 0' }}>
                 <Toolbar>
                     <div style={{ marginLeft: 'auto' }}>
-                        <IconButton onClick={colorMode.toggleColorMode} color="inherit">
-                            {theme1.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+                        <IconButton onClick={colorMode.toggleColorMode} color='primary'>
+                            {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
                         </IconButton>
                     </div>
-
                     <NavBarDrawerMenu />
                 </Toolbar>
             </AppBar>

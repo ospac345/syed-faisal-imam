@@ -95,7 +95,7 @@ export default function NavBarDrawerMenu() {
         <div>
             {['top'].map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <IconButton onClick={toggleDrawer(anchor, true)} color="inherit">
+                    <IconButton onClick={toggleDrawer(anchor, true)} color="primary">
                         <MenuIcon />
                     </IconButton>
                     <SwipeableDrawer
