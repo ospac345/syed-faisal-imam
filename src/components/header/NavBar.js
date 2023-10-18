@@ -22,7 +22,7 @@ function NavBar() {
             <AppBar component="nav" color='transparent' sx={{ boxShadow: '0 0 0 0' }}>
                 <Toolbar>
                     <div style={{ marginLeft: 'auto' }}>
-                        <IconButton onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
+                        <IconButton size='large' onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
                             color='primary'>
                             {theme === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
                         </IconButton>

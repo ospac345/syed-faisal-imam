@@ -4,14 +4,13 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { TypeAnimation } from 'react-type-animation';
-import '../../styles/heroSectionStyles.css';
 import { styled } from '@mui/system';
-import heroImg from '../images/syed-hero-image-2.webp'
 import Image from 'next/image'
 import { useTheme } from '@mui/material/styles';
 import ScrollButton from './ScrollButton';
 import Box from '@mui/material/Box';
 import Slide from '@mui/material/Slide';
+import '../../../styles/heroSectionStyles.css'
 
 
 const AnimationContainer = styled('div')({
@@ -45,7 +44,9 @@ const HeroSection = () => {
                             <Image
                                 className="hero-img"
                                 style={{ minWidth: '50%', maxWidth: '50%', height: 'auto', boxShadow: `-50px -50px 0 -40px ${theme.palette.secondary.main}, 50px 50px 0 -40px ${theme.palette.secondary.main}` }}
-                                src={heroImg}
+                                width={500}
+                                height={500}
+                                src="/images/hero-img.webp"
                                 alt="Syed Faisal Imam"
                                 priority
                             />

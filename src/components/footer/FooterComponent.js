@@ -64,7 +64,7 @@ const FooterComponent = () => {
                     </Grid>
 
                     <Grid item sx={{ display: 'flex', justifyContent: 'center' }}>
-                        <Link href="https://caledonianac-my.sharepoint.com/personal/simam202_caledonian_ac_uk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsimam202%5Fcaledonian%5Fac%5Fuk%2FDocuments%2FCVs%20for%20Portfolio%2FSyed%20Resume%201%2E5%2Epdf&parent=%2Fpersonal%2Fsimam202%5Fcaledonian%5Fac%5Fuk%2FDocuments%2FCVs%20for%20Portfolio&ga=1" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://drive.google.com/file/d/1YocqyCdT169ymW9-bfOKl98jbcCidbKS/view?usp=share_link" target="_blank" rel="noopener noreferrer">
                             <Button aria-label="resume" size='small' variant='outlined' color='primary' startIcon={<TextSnippetSharpIcon />}>
                                 Resume
                             </Button>
@@ -82,7 +82,7 @@ const FooterComponent = () => {
             </Grid>
             <Grid>
                 <Typography variant='body2' sx={{ textAlign: 'center' }} gutterBottom>
-                    © 2023 All rights reserved. Made by Syed Faisal Imam
+                    © 2023 | Syed Faisal Imam
                 </Typography>
             </Grid>
         </footer >

@@ -1,12 +1,12 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import HeroSection from './HeroSection';
+import HeroSection from './hero_section/HeroSection';
 import About from './about/About';
 import Projects from './projects/Projects'
 import Layout from '../Layout';
 
 
-const Body = () => {
+const MainBody = () => {
 
     return (
         <Layout>
@@ -18,10 +18,8 @@ const Body = () => {
             </Box>
 
         </Layout>
-    )
-
-
+    );
 
 }
 
-export default Body;
+export default MainBody;

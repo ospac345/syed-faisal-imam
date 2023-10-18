@@ -15,7 +15,7 @@ const AnimatedBackground = () => {
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        console.log(container);
+        //console.log(container);
     }, []);
 
     return (

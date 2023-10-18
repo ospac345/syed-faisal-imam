@@ -2,8 +2,6 @@
 
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { useState, useEffect, useMemo, createContext } from 'react';
 import AnimatedBackground from './AnimatedBackground';
 import NavBar from './header/NavBar';
 import FooterComponent from './footer/FooterComponent';

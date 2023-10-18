@@ -70,14 +70,14 @@ export default function NavBarDrawerMenu() {
                 </Link>
 
 
-                <Link href='#projects' scroll={false} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link href='/#projects' scroll={false} style={{ textDecoration: 'none', color: 'inherit' }}>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1, letterSpacing: '0.2em' }}>
                         projects
                     </Typography>
                 </Link>
 
 
-                <Link href='#contact' scroll={false} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link href='/#contact' scroll={false} style={{ textDecoration: 'none', color: 'inherit' }}>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1, letterSpacing: '0.2em' }}>
                         contact
                     </Typography>

@@ -16,10 +16,16 @@ const AboutDesc = () => {
         <>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Grid item xs={12} sm={12} md={7} lg={7} >
-                    <Typography variant="body1" component="body1" color="text.secondary" gutterBottom style={{ letterSpacing: '0.2em', lineHeight: '1.05' }}>
-                        I&apos;m a <strong>Frontend Developer</strong> dedicated to crafting engaging websites and web applications. Explore my projects that demonstrate successful product outcomes. <br /><br />
-                        I also enjoy sharing insights on web development and programming through <strong>LinkedIn</strong>. I&apos;m actively seeking opportunities to contribute and grow. Let&apos;s connect!
+                    <Typography color='text.secondary' variant="h6" gutterBottom sx={{ letterSpacing: '0.2em' }} >
+                        I am a Full Stack Web Developer based in vibrant Glasgow.
                     </Typography>
+                    <Typography variant="body1" color="text.primary" gutterBottom style={{ letterSpacing: '0.2em' }}>
+                        Since starting my journey in 2018, I&apos;ve been immersed in the tech industry, passionate about creating software that enhances lives.
+                        <br />
+                        When I&apos;m not coding, I&apos;m exploring new places, experimenting in the kitchen, or lost in the world of music.
+                    </Typography>
+
+
 
                 </Grid>
             </div>

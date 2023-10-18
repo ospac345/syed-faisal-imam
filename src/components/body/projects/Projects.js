@@ -48,9 +48,10 @@ const Projects = () => {
                             <Grid item xs={12} sm={12} md={7} lg={7}
                                 mt={{ xs: 10, sm: 10, md: 10, lg: 10 }}
                             >
-                                <Typography variant="body1" component="body1" color="text.secondary" gutterBottom style={{ letterSpacing: '0.2em', lineHeight: '1.05' }}>
-                                    I have had the privilege of working on a diverse range of projects, spanning from <strong>full-stack web development</strong> to <strong>machine learning</strong>, <strong>DevOps</strong>, <strong>Cloud Platform Development</strong>, and <strong>database design</strong>. Always on the lookout for exciting new projects, I am eager to explore innovative ideas. Feel free to reach out if you have any concepts in mind!
+                                <Typography variant="body1" color="text.primary" gutterBottom style={{ letterSpacing: '0.2em' }}>
+                                    I&apos;ve had the wild pleasure of diving into all sorts of projects, from jiving with <strong>full-stack web development</strong> to moonwalking through <strong>machine learning</strong>, <strong>DevOps</strong>, <strong>Cloud Platform Development</strong>, and even a bit of <strong>database design</strong>. I&apos;m always game for a good adventure, so if you&apos;ve got any cool ideas, don&apos;t be shy - let&apos;s chat!
                                 </Typography>
+
 
                             </Grid>
 

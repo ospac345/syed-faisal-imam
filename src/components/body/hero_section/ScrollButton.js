@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import '../../styles/mouseScrollButtonStyles.css';
 import { useTheme } from '@mui/material/styles';
+import '../../../styles/mouseScrollButtonStyles.css'
 
 const ScrollButton = ({ target }) => {
     const theme = useTheme();
