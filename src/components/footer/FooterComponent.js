@@ -6,7 +6,6 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import '../../styles/footerStyles.css'
 import { useTheme } from '@mui/material/styles';
-import Divider from '@mui/material/Divider';
 import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
@@ -23,14 +22,15 @@ const FooterComponent = () => {
         <footer style={{
             color: theme.palette.footer.text,
         }}>
-            <Grid container className="footer_container" style={{ backgroundColor: theme.palette.footer.background, marginTop: 'auto' }}>
+            <Grid
+                container className="footer_container" style={{ backgroundColor: theme.palette.footer.background }}>
 
                 <Grid item className="social_media" xs={12} md={4} p={2} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <FooterIllustration />
                 </Grid>
 
                 <Grid item xs={12} md={4} p={2}>
-                    <Typography id="contact" variant='h4' color='primary' sx={{ textAlign: 'center', fontWeight: '700', letterSpacing: '0.2em', lineHeight: '1.05', marginBottom: '30px' }} gutterBottom>
+                    <Typography variant='h4' color='primary' sx={{ textAlign: 'center', fontWeight: '700', letterSpacing: '0.2em', lineHeight: '1.05', marginBottom: '30px' }} gutterBottom>
                         contact.
                     </Typography>
                     <Grid item sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -80,7 +80,9 @@ const FooterComponent = () => {
                 </Grid>
 
             </Grid>
-            <Grid>
+            <Grid
+                id="contact"
+            >
                 <Typography variant='body2' sx={{ textAlign: 'center' }} gutterBottom>
                     © 2023 | Syed Faisal Imam
                 </Typography>
