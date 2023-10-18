@@ -1,30 +1,28 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
+import Link from 'next/link';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { useState, useEffect } from 'react';
+
 
 
 export default function NavBarDrawerMenu() {
-    const [state, setState] = React.useState({
+    const [state, setState] = useState({
         top: false,
     });
+    const [navClick, setNavClick] = useState(false);
 
     const toggleDrawer = (anchor, open) => (event) => {
         if (
@@ -38,6 +36,14 @@ export default function NavBarDrawerMenu() {
         setState({ ...state, [anchor]: open });
     };
 
+
+    useEffect(() => {
+        setTimeout(() => {
+            const hash = window.location.hash;
+            if (hash) document.querySelector(hash).scrollIntoView();
+        }, 0);
+    }, [navClick])
+
     const list = (anchor) => (
         <Box
             sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
@@ -45,18 +51,40 @@ export default function NavBarDrawerMenu() {
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
-            <List sx={{ letterSpacing: '0.5em' }}>
-                {['home', 'about', 'projects', 'contact'].map((text, index) => (
-                    <><ListItem key={text} disablePadding>
-                        <ListItemButton>
-                            <Typography variant="h6" component="div" sx={{ flexGrow: 1, letterSpacing: '0.2em' }}>
-                                {text}
-                            </Typography>
-                        </ListItemButton>
-                    </ListItem>
-                    </>
-                ))}
+            <List sx={{ letterSpacing: '0.5em', padding: '15px' }}>
+
+
+
+                <Link href='/' style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1, letterSpacing: '0.2em' }}>
+                        home
+                    </Typography>
+                </Link>
+
+
+
+                <Link href="/#about" scroll={true} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Typography variant="h6" color="inherit" component="div" sx={{ flexGrow: 1, letterSpacing: '0.2em' }}>
+                        about
+                    </Typography>
+                </Link>
+
+
+                <Link href='#projects' scroll={false} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1, letterSpacing: '0.2em' }}>
+                        projects
+                    </Typography>
+                </Link>
+
+
+                <Link href='#contact' scroll={false} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1, letterSpacing: '0.2em' }}>
+                        contact
+                    </Typography>
+                </Link>
+
             </List>
+
             <Divider variant='middle' />
             <List>
                 <Box sx={{ display: 'flex', justifyContent: 'start', alignItems: 'center', p: 1, m: 1 }}>
@@ -86,6 +114,7 @@ export default function NavBarDrawerMenu() {
                             <IconButton aria-label="whatsapp"><WhatsAppIcon /></IconButton>
                         </Link>
                     </div>
+
                 </Box>
             </List>
         </Box >

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
@@ -9,7 +11,6 @@ import Image from 'next/image'
 import { useTheme } from '@mui/material/styles';
 import ScrollButton from './ScrollButton';
 import Box from '@mui/material/Box';
-import { useEffect, useState } from 'react';
 import Slide from '@mui/material/Slide';
 
 
@@ -22,23 +23,10 @@ const AnimationContainer = styled('div')({
 const HeroSection = () => {
     const theme = useTheme();
 
-    const [containerHeight, setContainerHeight] = useState(window.innerHeight);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setContainerHeight(window.innerHeight);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
 
     return (
 
-        <Box style={{ height: `calc(${containerHeight}px - 50px)`, display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center' }}>
+        <Box style={{ height: `90vh`, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center' }}>
             <Grid
                 className='hero-section-grid-container'
                 container
@@ -48,7 +36,7 @@ const HeroSection = () => {
                 spacing={3}
                 columns={{ xs: 12, sm: 12, md: 12 }} // 12 columns on mobile, 12 columns on desktop
             >
-                <Slide direction="right" in={true} timeout={1000} mountOnEnter unmountOnExit>
+                <Slide direction="right" in={true} mountOnEnter unmountOnExit>
                     <Grid item xs={12} sm={6} md={6}>
                         <div className="hero-img-box"
                             style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
@@ -59,6 +47,7 @@ const HeroSection = () => {
                                 style={{ minWidth: '50%', maxWidth: '50%', height: 'auto', boxShadow: `-50px -50px 0 -40px ${theme.palette.secondary.main}, 50px 50px 0 -40px ${theme.palette.secondary.main}` }}
                                 src={heroImg}
                                 alt="Syed Faisal Imam"
+                                priority
                             />
                         </div>
 

@@ -5,7 +5,7 @@ import { IconButton } from '@mui/material';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import '../../styles/footerStyles.css'
-import { useTheme } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import Divider from '@mui/material/Divider';
 import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
@@ -30,7 +30,7 @@ const FooterComponent = () => {
                 </Grid>
 
                 <Grid item xs={12} md={4} p={2}>
-                    <Typography variant='h4' color='primary' sx={{ textAlign: 'center', fontWeight: '700', letterSpacing: '0.2em', lineHeight: '1.05', marginBottom: '30px' }} gutterBottom>
+                    <Typography id="contact" variant='h4' color='primary' sx={{ textAlign: 'center', fontWeight: '700', letterSpacing: '0.2em', lineHeight: '1.05', marginBottom: '30px' }} gutterBottom>
                         contact.
                     </Typography>
                     <Grid item sx={{ display: 'flex', justifyContent: 'center' }}>

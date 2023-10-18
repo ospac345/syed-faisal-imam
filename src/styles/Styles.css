@@ -1,5 +1,12 @@
 
 /* styles/AnimatedBackground.module.css */
+
+html,
+body {
+  overflow-x: hidden;
+scroll-behavior: smooth;
+}
+
 .animated-background {
     position: fixed;
     top: 0;

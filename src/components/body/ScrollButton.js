@@ -14,13 +14,13 @@ const ScrollButton = ({ target }) => {
                 duration={500}
             >
                 <div id="mouse-scroll">
-                    <div style={{ border: `2px solid ${theme.palette.primary.main}` }} class="mouse">
-                        <div style={{ background: `${theme.palette.primary.main}` }} class="mouse-in"></div>
+                    <div style={{ border: `2px solid ${theme.palette.primary.main}` }} className="mouse">
+                        <div style={{ background: `${theme.palette.primary.main}` }} className="mouse-in"></div>
                     </div>
                     <div>
-                        <span style={{ borderRight: `2px solid ${theme.palette.primary.main}`, borderBottom: `2px solid ${theme.palette.primary.main}` }} class="down-arrow-1"></span>
-                        <span style={{ borderRight: `2px solid ${theme.palette.primary.main}`, borderBottom: `2px solid ${theme.palette.primary.main}` }} class="down-arrow-2"></span>
-                        <span style={{ borderRight: `2px solid ${theme.palette.primary.main}`, borderBottom: `2px solid ${theme.palette.primary.main}` }} class="down-arrow-3"></span>
+                        <span style={{ borderRight: `2px solid ${theme.palette.primary.main}`, borderBottom: `2px solid ${theme.palette.primary.main}` }} className="down-arrow-1"></span>
+                        <span style={{ borderRight: `2px solid ${theme.palette.primary.main}`, borderBottom: `2px solid ${theme.palette.primary.main}` }} className="down-arrow-2"></span>
+                        <span style={{ borderRight: `2px solid ${theme.palette.primary.main}`, borderBottom: `2px solid ${theme.palette.primary.main}` }} className="down-arrow-3"></span>
                     </div>
                 </div>
             </Link>

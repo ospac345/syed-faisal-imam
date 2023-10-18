@@ -14,7 +14,7 @@ import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 
 export default function CustomizedTimeline() {
     return (
-        <Timeline position="alternate">
+        <Timeline position="alternate" >
             <TimelineItem>
                 <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
@@ -31,11 +31,14 @@ export default function CustomizedTimeline() {
                     </TimelineDot>
                     <TimelineConnector />
                 </TimelineSeparator>
-                <TimelineContent sx={{ py: '12px', px: 2 }}>
-                    <Typography variant="h6" component="span">
+                <TimelineContent sx={{ py: '10px', px: 2 }}>
+                    <Typography variant="h6" component="span" sx={{ letterSpacing: '0.1em' }}>
                         Start
                     </Typography>
-                    <Typography>Glasgow Caledonian University</Typography>
+                    <Typography
+                        variant="subtitle2"
+                        sx={{ letterSpacing: '0.1em' }}
+                    >Glasgow Caledonian University</Typography>
                 </TimelineContent>
             </TimelineItem>
 
@@ -55,10 +58,13 @@ export default function CustomizedTimeline() {
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                    <Typography variant="h6" component="span">
+                    <Typography variant="h6" component="span" sx={{ letterSpacing: '0.1em' }}>
                         Year in Industry Placement
                     </Typography>
-                    <Typography>ScottishPower, Glasgow</Typography>
+                    <Typography
+                        variant="subtitle2"
+                        sx={{ letterSpacing: '0.1em' }}
+                    >ScottishPower, Glasgow</Typography>
                 </TimelineContent>
             </TimelineItem>
 
@@ -79,10 +85,13 @@ export default function CustomizedTimeline() {
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                    <Typography variant="h6" component="span">
+                    <Typography variant="h6" component="span" sx={{ letterSpacing: '0.1em' }}>
                         End of Placement
                     </Typography>
-                    <Typography>Back to University</Typography>
+                    <Typography
+                        variant="subtitle2"
+                        sx={{ letterSpacing: '0.1em' }}
+                    >Back to University</Typography>
                 </TimelineContent>
             </TimelineItem>
 
@@ -102,10 +111,13 @@ export default function CustomizedTimeline() {
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                    <Typography variant="h6" component="span">
+                    <Typography variant="h6" component="span" sx={{ letterSpacing: '0.1em' }}>
                         BSc Computing
                     </Typography>
-                    <Typography>1st Class Hons. Sandwich</Typography>
+                    <Typography
+                        variant="subtitle2"
+                        sx={{ letterSpacing: '0.1em' }}
+                    >1st Class Hons. Sandwich</Typography>
                 </TimelineContent>
             </TimelineItem>
         </Timeline>

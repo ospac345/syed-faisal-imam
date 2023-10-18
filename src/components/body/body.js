@@ -1,18 +1,23 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import FooterComponent from '../footer/FooterComponent';
 import HeroSection from './HeroSection';
 import About from './about/About';
+import Projects from './projects/Projects'
+import Layout from '../Layout';
 
 
 const Body = () => {
 
     return (
-        <Box sx={{ position: 'relative', zIndex: 1 }}>
-            <HeroSection />
-            <About />
-        </Box>
+        <Layout>
+
+            <Box sx={{ position: 'relative', zIndex: 1, width: '100%' }}>
+                <HeroSection />
+                <About />
+                <Projects />
+            </Box>
+
+        </Layout>
     )
 
 
