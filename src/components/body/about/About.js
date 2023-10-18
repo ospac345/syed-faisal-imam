@@ -3,7 +3,7 @@ import Paper from '@mui/material/Paper';
 import { useTheme } from '@mui/material/styles';
 import { Typography } from '@mui/material';
 import { Grid } from '@mui/material';
-import AboutTimeline from './AboutTimeLine';
+import AboutTimeline from './AboutTimeline';
 import AboutDesc from './AboutDesc';
 import AboutJourneyIllustration from './AboutJourneyIllustration';
 import Divider from '@mui/material/Divider';
