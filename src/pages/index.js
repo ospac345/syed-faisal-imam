@@ -1,8 +1,8 @@
 
 import MainBody from "@/components/body/MainBody";
 import { Inter } from 'next/font/google'
-import '@/styles/styles.css'
 import Head from 'next/head'
+import '../app/globals.css'
 
 
 const inter = Inter({ subsets: ['latin'] })

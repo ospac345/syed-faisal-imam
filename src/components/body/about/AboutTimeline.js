@@ -12,7 +12,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 
-export default function CustomizedTimeline() {
+export default function AboutTimeline() {
     return (
         <Timeline position="alternate" >
             <TimelineItem>

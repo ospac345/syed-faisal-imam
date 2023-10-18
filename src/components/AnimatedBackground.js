@@ -3,8 +3,6 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { useTheme } from '@mui/material/styles';
-import '../styles/styles.css'
-import { useState } from "react";
 
 const AnimatedBackground = () => {
 
