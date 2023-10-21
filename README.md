@@ -28,17 +28,17 @@ This is the personal portfolio website of Syed Faisal Imam, a skilled software e
 
 ### Installation
 
-1. Clone the repository: gh repo clone ospac345/syed-faisal-imam
+1. Clone the repository: `gh repo clone ospac345/syed-faisal-imam`
 
-2. Change into the project directory: cd syed-faisal-imam
+2. Change into the project directory: `cd syed-faisal-imam`
 
 
-3. Install dependencies: npm install
+3. Install dependencies: `npm install`
 
 
 ### Usage
 
-To start the development server, run: npm run dev
+To start the development server, run: `npm run dev`
 
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
