@@ -17,7 +17,7 @@ const AboutDesc = () => {
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Grid item xs={12} sm={12} md={7} lg={7} >
                     <Typography color='text.secondary' variant="h6" gutterBottom sx={{ letterSpacing: '0.2em' }} >
-                        I am a Full Stack Web Developer based in vibrant Glasgow.
+                        I am a Full Stack Software Engineer based in vibrant Glasgow.
                     </Typography>
                     <Typography variant="body1" color="text.primary" gutterBottom style={{ letterSpacing: '0.2em' }}>
                         Since starting my journey in 2018, I&apos;ve been immersed in the tech industry, passionate about creating software that enhances lives.

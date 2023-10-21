@@ -13,24 +13,21 @@ const Home = () => {
         <>
             <Head>
                 <title>Syed Faisal Imam</title>
-                <meta name="description" content="Welcome to my portfolio!" />
+                <meta name="description" content="Full stack Software Engineer skilled in both front-end and back-end technologies. Proficient in creating responsive web applications with a strong focus on user experience. Experienced in working with modern frameworks and technologies to deliver high-quality solutions." />
                 <meta property="og:image" content="/logo.png" />
-                <meta name="keywords" content="Next.js, React, Syed Faisal Imam, Full Stack Developer" />
-                <meta property="og:title" content="Syed Faisal Imam | Full Stack Developer" />
-                <meta property="og:description" content="Welcome to my portfolio!" />
+                <meta name="keywords" content="Next.js, React, Syed Faisal Imam, Full Stack Software Engineer" />
+                <meta property="og:title" content="Syed Faisal Imam | Full Stack Software Engineer" />
+                <meta property="og:description" content="Full stack Software Engineer skilled in both front-end and back-end technologies. Proficient in creating responsive web applications with a strong focus on user experience. Experienced in working with modern frameworks and technologies to deliver high-quality solutions." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://syedfaisalimam.com/" />
-                <meta property="og:site_name" content="Syed Faisal Imam | Full Stack Developer" />
-                <meta name="twitter:card" content="summary" />
-                <meta name="twitter:title" content="Syed Faisal Imam | Full Stack Developer" />
-                <meta name="twitter:description" content="Welcome to my portfolio!" />
+                <meta property="og:url" content="https://syed-faisal-imam.vercel.app/" />
+                <meta property="og:site_name" content="Syed Faisal Imam | Full Stack Software Engineer" />
+                <meta name="twitter:title" content="Syed Faisal Imam | Full Stack Software Engineer" />
+                <meta name="twitter:description" content="Full stack Software Engineer skilled in both front-end and back-end technologies. Proficient in creating responsive web applications with a strong focus on user experience. Experienced in working with modern frameworks and technologies to deliver high-quality solutions." />
                 <meta name="twitter:image" content="logo.png" />
-                <meta name="twitter:site" content="@syedfaisalimam" />
-                <meta name="twitter:creator" content="@syedfaisalimam" />
                 <link rel="icon" href="/logo.png" />
                 <link rel="apple-touch-icon" href="/logo.png" />
                 <link rel="manifest" href="/public/manifest.json" />
-                <link rel="canonical" href="https://syedfaisalimam.com/" />
+                <link rel="canonical" href="https://syed-faisal-imam.vercel.app" />
 
             </Head>
 
