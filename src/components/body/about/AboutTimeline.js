@@ -120,6 +120,33 @@ export default function AboutTimeline() {
                     >1st Class Hons. Sandwich</Typography>
                 </TimelineContent>
             </TimelineItem>
+
+            <TimelineItem>
+                <TimelineOppositeContent
+                    sx={{ m: 'auto 0' }}
+                    align="right"
+                    variant="body2"
+                    color="text.secondary"
+                >
+                    Nov 2023 - Present
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                    <TimelineConnector />
+                    <TimelineDot color="primary">
+                        <WorkOutlineIcon />
+                    </TimelineDot>
+                    <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ py: '12px', px: 2 }}>
+                    <Typography variant="h6" component="span" sx={{ letterSpacing: '0.1em' }}>
+                        Systems Applications Analyst
+                    </Typography>
+                    <Typography
+                        variant="subtitle2"
+                        sx={{ letterSpacing: '0.1em' }}
+                    >W H Malcolm</Typography>
+                </TimelineContent>
+            </TimelineItem>
         </Timeline>
     );
 }

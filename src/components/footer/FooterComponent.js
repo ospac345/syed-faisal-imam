@@ -17,6 +17,7 @@ import TextSnippetSharpIcon from '@mui/icons-material/TextSnippetSharp';
 
 const FooterComponent = () => {
     const theme = useTheme();
+    const currentYear = new Date().getFullYear();
 
     return (
         <footer style={{
@@ -83,8 +84,8 @@ const FooterComponent = () => {
             <Grid
                 id="contact"
             >
-                <Typography variant='body2' sx={{ textAlign: 'center' }} gutterBottom>
-                    © 2023 | Syed Faisal Imam
+                <Typography variant="body2" sx={{ textAlign: 'center' }} gutterBottom>
+                    © {currentYear} | Syed Faisal Imam
                 </Typography>
             </Grid>
         </footer >

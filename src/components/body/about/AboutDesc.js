@@ -24,9 +24,6 @@ const AboutDesc = () => {
                         <br />
                         When I&apos;m not coding, I&apos;m exploring new places, experimenting in the kitchen, or lost in the world of music.
                     </Typography>
-
-
-
                 </Grid>
             </div>
 
@@ -40,12 +37,14 @@ const AboutDesc = () => {
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Grid item xs={12} sm={12} md={7} lg={7} marginBottom='25px'>
                     {
-                        ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'React native', 'Material UI', 'Bootstrap', 'Git', 'GitHub', 'Node.js', 'Express.js', 'MongoDB', 'Python', 'Java', 'SQL', 'PHP', 'Adobe Photoshop', 'Adobe Illustrator', 'Linux', 'AWS'].map((skill, index) => (
-
+                        [
+                            'HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Node.js', 'Express.js', 'MongoDB',
+                            'SQL', 'Git', 'GitHub', 'Material UI', 'Docker', 'Linux', 'AWS', 'TypeScript', 'GraphQL',
+                            'Python', 'Lobster EDI', 'Road Runner', 'AutoStore', 'REST APIs', 'EDI Integration', 'WMS',
+                            'Cloud Computing', 'Agile Development', 'CI/CD', 'Jenkins', 'PostgreSQL', 'Nginx'
+                        ].map((skill, index) => (
                             <Chip key={index} style={{ margin: '1%' }} label={skill} />
-
                         ))
-
                     }
                 </Grid>
             </div>
