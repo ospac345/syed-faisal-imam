@@ -65,7 +65,7 @@ const FooterComponent = () => {
                     </Grid>
 
                     <Grid item sx={{ display: 'flex', justifyContent: 'center' }}>
-                        <Link href="https://drive.google.com/file/d/1YocqyCdT169ymW9-bfOKl98jbcCidbKS/view?usp=share_link" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://drive.google.com/file/d/1IyNerW-V_VFMVzpznbFQ94YpZRDWwybZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <Button aria-label="resume" size='small' variant='outlined' color='primary' startIcon={<TextSnippetSharpIcon />}>
                                 Resume
                             </Button>
