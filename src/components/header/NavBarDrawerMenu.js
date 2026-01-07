@@ -13,6 +13,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { useState, useEffect } from 'react';
+import Button from '@mui/material/Button';
+import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
 
 
 
@@ -108,8 +110,8 @@ export default function NavBarDrawerMenu() {
                     </div>
 
                     <div>
-                        <Link href="https://wa.me/447480976762" target="_blank" rel="noopener noreferrer">
-                            <IconButton aria-label="whatsapp"><WhatsAppIcon /></IconButton>
+                        <Link href="https://drive.google.com/file/d/1IyNerW-V_VFMVzpznbFQ94YpZRDWwybZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <IconButton aria-label="resume"><WorkOutlineOutlinedIcon /></IconButton>
                         </Link>
                     </div>
 

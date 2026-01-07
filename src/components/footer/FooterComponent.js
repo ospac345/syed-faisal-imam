@@ -56,12 +56,6 @@ const FooterComponent = () => {
                             </Link>
                         </div>
 
-                        <div>
-                            <Link href="https://wa.me/447480976762" target="_blank" rel="noopener noreferrer">
-                                <IconButton aria-label="whatsapp" size='large' color='secondary'><WhatsAppIcon /></IconButton>
-                            </Link>
-                        </div>
-
                     </Grid>
 
                     <Grid item sx={{ display: 'flex', justifyContent: 'center' }}>
