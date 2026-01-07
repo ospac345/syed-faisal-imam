@@ -68,8 +68,10 @@ const FooterComponent = () => {
 
                     <Grid item sx={{ display: 'flex', justifyContent: 'center', p: 2 }}>
                         <Typography variant='body2' sx={{ textAlign: 'center', letterSpacing: '0.2em', lineHeight: '1.05' }} gutterBottom>
-                            <LocationOnIcon />
-                            Glasgow, Scotland, UK
+                            <Link href="https://maps.app.goo.gl/BVxdUxp3nd1Lzu8g9" target="_blank" rel="noopener noreferrer">
+                                <LocationOnIcon />
+                                Glasgow, Scotland, UK
+                            </Link>
                         </Typography>
                     </Grid>
                 </Grid>
